@@ -29,6 +29,7 @@ GEM
     nokogiri (1.4.4)
     rack (1.2.1)
     rake (0.8.7)
+    ri_cal (0.8.8)
     roauth (0.0.3)
     roxml (3.1.6)
       activesupport (>= 2.3.0)
@@ -66,6 +67,7 @@ DEPENDENCIES
   launchy (= 0.3.7)
   nokogiri (= 1.4.4)
   rake (= 0.8.7)
+  ri_cal
   roxml
   rspec
   sinatra (= 1.1.2)

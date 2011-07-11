@@ -71,3 +71,12 @@ widgets:
     name: hoptoad
     account: foo
     auth_key: foobarbaz
+
+  Presently:
+    title: Presently # Title for Presently widget
+    name: presently 
+    username: username # Presently username
+    password: password #Presently password 
+    account: accountname #Account for Presently accountname.presently.com
+    nitems: 5 #fetch item limit, max 20
+

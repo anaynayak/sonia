@@ -15,6 +15,7 @@ group :runtime do
   gem "sinatra", "1.1.2"
   gem "haml", "3.0.25"
   gem "i18n"
+  gem "ri_cal"
   gem "roxml"
 end
 
