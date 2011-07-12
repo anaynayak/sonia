@@ -80,3 +80,16 @@ widgets:
     account: accountname #Account for Presently accountname.presently.com
     nitems: 5 #fetch item limit, max 20
 
+  Webcal:
+    title: Team calendar # Team calendar title
+    name: webcal 
+    username: username # Calendar username
+    password: password #Calendar password 
+    nitems: 5 #fetch item limit
+
+  Cctray:
+    title: Cctray # Title for cctray
+    name: cctray 
+    url: http://url_goes_here # URL of the cctray instance
+    poll_time: 10 # Poll time
+    nitems: 5 #fetch item limit
