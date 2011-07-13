@@ -92,4 +92,4 @@ widgets:
     name: cctray 
     url: http://url_goes_here # URL of the cctray instance
     poll_time: 10 # Poll time
-    nitems: 5 #fetch item limit
+    nitems: 5 #fetch item limit 
