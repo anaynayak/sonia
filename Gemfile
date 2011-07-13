@@ -21,6 +21,7 @@ end
 
 group :test do
   gem "rspec"
+  gem "foreman"
   #gem "cucumber"
 end
 
