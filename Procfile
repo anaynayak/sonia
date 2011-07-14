@@ -1,1 +1,1 @@
-web: bundle exec ruby bin/sonia start -c example/config.yml --no-auto -p $PORT
+web: bundle exec ruby test.rb -p $PORT
