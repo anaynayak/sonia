@@ -16,6 +16,7 @@ group :runtime do
   gem "haml", "3.0.25"
   gem "i18n"
   gem "ri_cal"
+  gem "time-ago-in-words"
   gem "roxml"
 end
 

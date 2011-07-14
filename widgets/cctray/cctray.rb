@@ -1,3 +1,5 @@
+require 'time-ago-in-words'
+
 module Sonia
   module Widgets
     class Cctray < Sonia::Widget
@@ -40,7 +42,7 @@ module Sonia
         {
             :build_status => element['lastBuildStatus'],
             :name => element['name'],
-            :time => element['lastBuildTime'],
+            :time => Time.strptime(element['lastBuildTime'], "%Y-%m-%dT%H:%M:%S").ago_in_words,
             :url => element['webUrl']
         }
       end

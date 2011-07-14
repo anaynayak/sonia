@@ -39,7 +39,7 @@ var Webcal = Class.create(Widget, {
   },
 
   buildWidgetIcon: function() {
-    return(new Element("img", { src: "images/presently/icon.png", 'class': 'presently icon'}));
+    return(new Element("img", { src: "images/webcals/icon.png", 'class': 'presently icon'}));
   },
 
   buildMessages: function() {
