@@ -38,7 +38,8 @@ module Sonia
 
       def parse_response(response)
         cals = RiCal.parse_string response.strip
-        events = cals.first.events.sort {|a,b| b.dtstart <=> a.dtstart}
+        now = Time.now
+        events = cals.first.events.sort {|a,b| b.dtstart <=> a.dtstart}.reject {|event| now > event.dtend }
         events.each {|event| push formatted_event(event)}
       end  
 
