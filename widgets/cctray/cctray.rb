@@ -26,7 +26,8 @@ module Sonia
         if http.response_header.status == 200
           parse_response(http.response)
         else
-          log_unsuccessful_response_body(http.response)
+          #log_unsuccessful_response_body(http.response)
+          push :items => [mapElement({'lastBuildStatus'=> 'Failure', 'name'=> 'Connection issue', 'lastBuildTime' => Time.now.strftime('%Y-%m-%dT%H:%M:%S'), 'webUrl' => 'none'})]
         end
       end
 
