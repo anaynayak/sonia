@@ -3,7 +3,6 @@ require 'ri_cal'
 module Sonia
   module Widgets
     class Webcal < Sonia::Widget
-      URL = "https://neatco.jira.com/wiki/plugins/calendar/ical/dc.action?pageId=2555906&cid=staypuftCalendar&scid=635FHI9KE09VT5O5RIUMCKK76Z3FLUGF&os_authType=basic"
 
       def initialize(config)
         super(config)
@@ -45,15 +44,15 @@ module Sonia
 
       def formatted_event(event) 
         {
-            :start_date => event.dtstart,
-            :end_date => event.dtend,
+            :start_date => event.dtstart.strftime('%b %d'),
+            :end_date => event.dtend.strftime('%b %d'),
             :location => event.location,
             :summary => event.summary,
         }
       end
 
       def service_url
-        URL % [config.username, config.password]
+        config.url % [config.username, config.password]
       end
     end
   end
